@@ -43,15 +43,11 @@ button {
 .container {
   width: 375px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-right: 32px;
-    padding-left: 32px;
   }
 }
 
@@ -88,7 +84,7 @@ button {
 }
 
 .header-icon-two {
-  fill: #000;
+  fill: black;
 }
 
 .header-menu {
@@ -103,20 +99,18 @@ button {
     max-width: 768px;
     padding-bottom: 24px;
   }
-
-  .container {
-    min-width: 768px;
-    padding-right: 32px;
-    padding-left: 32px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header {
-    padding-bottom: 32px;
+    padding-bottom: 56px;
+    padding-right: 0;
+    padding-left: 0;
+    min-width: 1200px;
   }
   .one-header {
     display: flex;
+    justify-content: space-between;
   }
 
   .header-logo {
@@ -162,6 +156,7 @@ button {
   border-radius: 30px;
   padding-top: 395px;
   padding-bottom: 20px;
+  padding-left: 20px;
   background-image: linear-gradient(
       180deg,
       rgba(17, 17, 17, 0.4) 0%,
@@ -256,6 +251,8 @@ button {
 @media screen and (min-width: 768px) {
   .one-section {
     max-width: 768px;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-top: 24px;
     padding-left: 40px;
     display: flex;
@@ -266,6 +263,7 @@ button {
       ),
       url(..//images/chocolate-tab1-min.jpg);
   }
+
   .one-section-title {
     font-weight: 500;
     font-size: 28px;
@@ -288,5 +286,109 @@ button {
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(..//images/chocolate-tab@2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .one-section {
+    min-width: 1200px;
+    margin-top: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(..//images/chocolate-desk-min.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .one-section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(..//images/chocolate-desk@2x-min.jpg);
+  }
+}
+
+/*--------SECTION-TWO------------*/
+.two-section {
+  min-width: 375px;
+  margin-top: 72px;
+  padding: 20px;
+  background-color: black;
+}
+
+.two-section-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.two-section-list {
+  padding: 0px 28px 0px 0px;
+  width: 336px;
+  height: 244px;
+}
+
+.two-section-group {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.two-section-icon {
+  fill: chocolate;
+}
+
+.two-section-item {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.two-section-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .two-section {
+    min-width: 768px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-right: 32px;
+    padding-bottom: 50px;
+    padding-left: 32px;
+  }
+  .two-section-title {
+    column-gap: 0;
+    row-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .two-section {
+    min-width: 1200px;
+    margin-top: 54px;
+    padding: 50px;
+  }
+
+  .two-section-title {
+    gap: 70px;
   }
 }
