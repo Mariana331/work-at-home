@@ -530,3 +530,51 @@ button {
     height: 270px;
   }
 }
+
+/*--------THREE-SECTION------------*/
+.four-section {
+  max-width: 375px;
+  padding-top: 68px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.four-section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  margin-bottom: 32px;
+}
+
+.four-section-color {
+  color: chocolate;
+}
+
+.four-section-image {
+  border-radius: 15px;
+  width: 335px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.four-container-text {
+  padding-top: 20px;
+  padding-right: 14px;
+  padding-left: 14px;
+  width: 307px;
+  height: 416px;
+}
+
+ul {
+  list-style-type: block;
+}
+.four-section-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: black;
+}
