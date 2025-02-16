@@ -81,6 +81,7 @@ button {
 .header-icon {
   stroke-width: 1.8px;
   fill: orange;
+  margin-right: 166px;
 }
 
 .header-icon-two {
@@ -393,6 +394,7 @@ button {
 
 /*--------THREE-SECTION------------*/
 .three-section {
+  max-width: 375px;
   padding-top: 72px;
   padding-right: 20px;
   padding-left: 20px;
@@ -407,8 +409,8 @@ button {
   text-align: center;
   color: black;
   margin-bottom: 24px;
-  margin-right: 26px;
-  margin-left: 26px;
+  margin-left: 0;
+  margin-right: 0;
   max-width: 283px;
 }
 
@@ -434,10 +436,16 @@ button {
 }
 
 .three-section-list-one {
-  background-color: chocolate;
   border-radius: 15px;
   width: 335px;
   height: 270px;
+  background-color: chocolate;
+  padding-top: 28px;
+  padding-left: 50px;
+}
+
+.three-image {
+  margin-bottom: 25px;
 }
 
 .three-list-text {
@@ -447,15 +455,20 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: black;
-  padding-left: 24px;
+}
+
+.three-white {
+  color: #fff;
 }
 
 .three-section-list-two {
   background-color: #fff;
-  border: 1px solid var(chocolate);
+  border: 1px solid chocolate;
   border-radius: 15px;
   width: 335px;
   height: 270px;
+  padding-top: 28px;
+  padding-left: 50px;
 }
 
 .three-section-list-three {
@@ -463,9 +476,57 @@ button {
   border-radius: 15px;
   width: 335px;
   height: 270px;
+  padding-top: 28px;
+  padding-left: 50px;
 }
 
-.three-list-color {
-  color: #fff;
-  padding-left: 24px;
+@media screen and (min-width: 768px) {
+  .three-section {
+    max-width: 768px;
+    padding-top: 100px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .three-section-title {
+    font-size: 24px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 411px;
+    letter-spacing: -0.03em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .three-section-text {
+    max-width: 486px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .three-section-group {
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .three-section {
+    max-width: 768px;
+    padding-top: 128px;
+  }
+  .three-section-group {
+    gap: 19px;
+  }
+
+  .three-section-list-one {
+    width: 270px;
+    height: 270px;
+  }
+  .three-section-list-two {
+    width: 270px;
+    height: 270px;
+  }
+  .three-section-list-three {
+    width: 270px;
+    height: 270px;
+  }
 }
